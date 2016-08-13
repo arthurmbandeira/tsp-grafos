@@ -1,10 +1,12 @@
+from collections import OrderedDict
+
 class Vertice:
     """docstring for Vertice"""
     def __init__(self, chave):
         self.id = chave
         self.cor = ""
         self.pai = None
-        self.adj = {}
+        self.adj = OrderedDict()
         self.d = 0
         self.f = 0
         self.nivel = 0
